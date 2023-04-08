@@ -1,0 +1,171 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+
+    background-image: url("icon/bg.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 100vw 100vh;
+    display: flex;
+    justify-content: center;
+}
+.plus{
+    position: absolute;
+    bottom: 0;
+    right: 1vw;
+    height: 15%;
+    background-color: #194c6b;
+    border-radius: 5vw;
+    transition: 0.4s ease;
+    z-index: 999;
+}
+.plus:hover{
+    transform: scale(1.1);
+}
+/*******************frame****************/
+.pass_contant{
+    width: 80%;
+    height: 96vh;
+    background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.18);
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+}
+/********************header*******************/
+.title{
+    border-radius: 20px 20px 0 0;
+    background-color: #1e7089de;
+    text-align: center;
+    font-weight: 900;
+    font-size: 300%;
+    color: rgb(255, 255, 255);
+    margin:0;
+}
+/*****stored by************/
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 4vw;
+
+}
+nav select{
+    background-color: transparent;
+    margin: 0;
+    color: #ffffff;
+    font-size: 120%;
+    padding: 1%;
+    font-weight: 900;
+    border-color: transparent;
+}
+nav select option{
+    background-color: #fff;
+    color: #7f0bd8;
+    font-weight: 800;
+    font-size: 1vw;
+    align-content: fle;
+}
+
+nav .stor_by{
+    display: flex;
+    justify-content: space-between;
+}
+nav span img{
+    width: 4hv;
+    height: 2.5vw;
+    margin-right: 1vw;
+}
+nav span img:hover{
+    background: #fa7f64;
+}
+.stord{
+    background: #ffffffef;
+    height: 4vh;
+    width: 11vw;
+    margin-top: 2%;
+}
+.stord .sort_word{
+    font-weight: 900;
+}
+hr{
+    position: absolute;
+    top: 15%;
+    left: 6.2%;
+    width: 88.5%;
+}
+/***************************frame cards****************/
+.all_cardes{
+    margin: 2% 0 0;
+    width: 100%;
+    height: 78vh;
+    border-radius: 0 0 20px 20px;
+    background: #64cdfa13;
+    overflow-y: scroll;
+    display: flex;
+    flex-wrap: wrap;
+}
+.all_cardes::-webkit-scrollbar {
+    
+    background: #b8dcf4;
+    border-radius: 10px;
+}
+.all_cardes::-webkit-scrollbar-thumb {
+    background: #194c6b;
+    border-radius: 10px;
+}
+.card{
+
+    background:#ffffff;
+    width: 23%;
+    height: 50%;
+    margin: 0.9%;
+    border-radius: 5px;
+    transition: 0.4s ease;
+    display: flex;
+    flex-direction: column;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.containt_note{
+    width: 100%;
+    height: 70%;
+    
+}
+.containt_note P{
+    background-color: #194c6b;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+.disc_card{
+    width: 100%;
+    height: 30%;
+    background: #8aa3f5;
+    border-radius: 0 0 5px 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: 900;
+    font-family: cursive;
+    font-size: 1.1vw;
+}
+.card_img{
+    height: 100%;
+    width: 100%;
+}
+.card p{
+    padding-left: 5%;
+    font-weight: 900;
+    font-family: cursive;
+    font-size: 1.1vw;
+}
+.card .WebSite{
+    font-weight: 900;
+    font-family: cursive;
+    font-size: 1.5vw;
+}

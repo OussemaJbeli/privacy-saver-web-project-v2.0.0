@@ -1,0 +1,207 @@
+body{
+
+    background-image: url("icon/frame.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 100vw 100vh;
+}
+.plus{
+    position: absolute;
+    bottom: 0;
+    right: 1vw;
+    height: 10%;
+    background-color: #f95935;
+    border-radius: 5vw;
+    transition: 0.4s ease;
+    z-index: 999;
+}
+.plus:hover{
+    transform: scale(1.1);
+}
+/*******************frame****************/
+.pass_contant{
+    width: 80%;
+    height: 96vh;
+    margin-top: auto;
+    margin-left: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.18);
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+}
+/********************header*******************/
+.title{
+    border-radius: 20px 20px 0 0;
+    background-color: #e05669de;
+    text-align: center;
+    font-weight: 900;
+    font-size: 300%;
+    color: rgb(255, 254, 207);
+    margin:0;
+}
+/*****stored by************/
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 4vw;
+
+}
+nav select{
+    background-color: transparent;
+    margin: 0;
+    color: #ffffff;
+    font-size: 120%;
+    padding: 1%;
+    font-weight: 900;
+    border-color: transparent;
+}
+nav select option{
+    background-color: #fff;
+    color: #7f0bd8;
+    font-weight: 800;
+    font-size: 1vw;
+    align-content: fle;
+}
+
+nav .stor_by{
+    display: flex;
+    justify-content: space-between;
+}
+nav span img{
+    width: 4hv;
+    height: 2.5vw;
+    margin-right: 1vw;
+}
+nav span img:hover{
+    background: #fa7f64;
+}
+.stord{
+    background: #ffffffef;
+    height: 4vh;
+    width: 11vw;
+    margin-top: 2%;
+}
+.stord .sort_word{
+    font-weight: 900;
+}
+/*********************select list + js*************/
+
+.select_list{
+    position: absolute;
+    z-index: 999;
+    width: 11vw;
+    top:15%;
+    right: 5%;
+    background-color: #ffffffef;
+    text-align: center;
+    visibility: hidden;
+}
+.select_list img{
+    height: 70%;
+    padding-right: 6%;
+}
+.size_icon img{
+    position: relative;
+    top: 0.5vh;
+    left: -0.2vw;
+}
+.select_list p{
+    height: 5vh;
+    width: 100%;
+    display: inline-block;
+    margin: 1vh 0;
+    cursor: pointer;
+}
+.select_list p::before{
+    content: "";
+    position: absolute;
+    left: 50%;
+    margin-top: 20%;
+    background-color: #f16c4e;
+    width: 0;
+    height: 3px;
+    transition-property: width left;
+    transition-duration: 0.2s;
+    
+
+}
+.select_list :hover::before{
+    
+    width:100%;
+    left: 0;
+    
+}
+hr{
+    position: absolute;
+    top: 15%;
+    left: 6.2%;
+    width: 88.5%;
+}
+/***************************frame cards****************/
+.all_cardes{
+    margin: 2% 0 0;
+    width: 100%;
+    height: 78vh;
+    border-radius: 0 0 20px 20px;
+    background: #fa7f6444;
+    overflow-y: scroll;
+    display: flex;
+    flex-wrap: wrap;
+}
+.all_cardes::-webkit-scrollbar {
+    
+    background: #fff4f4;
+    border-radius: 10px;
+}
+.all_cardes::-webkit-scrollbar-thumb {
+    background: #fa7f64;
+    border-radius: 10px;
+}
+.card{
+
+    background:#ffffff;
+    width: 23%;
+    height: 50%;
+    margin: 0.9%;
+    border-radius: 5px;
+    transition: 0.4s ease;
+    display: flex;
+    flex-direction: column;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.logo_card{
+    width: 100%;
+    height: 70%;
+    background: #112049;
+    border-radius: 5px 5px 0 0;
+}
+.disc_card{
+    width: 100%;
+    height: 30%;
+    background: #ffffff;
+    border-radius: 0 0 5px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.card_img{
+    height: 100%;
+    width: 100%;
+}
+.card p{
+    padding-left: 5%;
+    font-weight: 900;
+    font-family: cursive;
+    font-size: 1.1vw;
+}
+.card .WebSite{
+    font-weight: 900;
+    font-family: cursive;
+    font-size: 1.5vw;
+}

@@ -1,0 +1,146 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+.ditails{/*********************hedha*/
+    position: absolute;
+    top:0;
+    left:0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width:100%;
+    z-index: 999;
+    background-color: #000000b1;
+    visibility: hidden;/********hedhi*******/
+    transition: 0.4s ease;
+}
+@keyframes open_ditails{
+    0%{
+        height: 0;
+        width: 0%;
+        top: 90vh;
+        left: 35%;
+    }
+    100%{
+        height: 100%;
+        width:45%;
+        top:2%;
+        left:0;
+    }
+}
+@keyframes close_ditails{
+    0%{
+        height: 100%;
+        width:45%;
+        top:2%;
+        left:0;
+    }
+    100%{
+        height: 0;
+        width: 0%;
+        top: 91vh;
+        left: 35%;
+    }
+}
+.ditails .formulaire_panel{
+    position: relative;
+    border-radius: 1vw;
+    border-color: #fff;
+    border-style: solid;
+    overflow: hidden;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.626), rgb(253, 157, 202));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    height: 80%;
+    width: 35%;
+}
+.ditails .form{
+    height: 100%;
+    width: 100%;
+    
+}
+.ditails form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-bottom: 10%;
+    width: 100%;
+    height: 90%;
+}
+/******************close******************/
+.ditails .close{
+    width: 100%;
+    height: 7%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+#ditails_close_img{
+    height: 100%;
+    background-color: #2a2828;
+    border-radius:  0 1vw 0 1vw;
+    cursor: pointer;
+}
+/*****************formuller*******************/
+/**************title***********/
+.ditails .title_ditails p{
+    text-align: center;
+    font-size: 2.5vw;
+    font-family: cursive;
+    font-weight: 900;
+    color: #2a2828;
+}
+/*************feilds*************/
+.feildes_ditails{
+    display: flex;
+    flex-direction: column;
+
+}
+/**********************botton***************/
+.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+}
+#save{
+    background-color: #2a2828;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1.2vw;
+    font-family: cursive;
+    font-weight: 900;
+    height: 7vh;
+    margin: 0;
+    width: 30%;
+    transition: 0.4s ease;
+}
+#save:hover{
+    background-color: #0acf1e;
+    transform: scale(1.1);
+}
+#delete{
+    background-color: #2a2828;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1.2vw;
+    font-family: cursive;
+    font-weight: 900;
+    height: 7vh;
+    width: 30%;
+    margin: 0;
+    transition: 0.4s ease;
+}
+#delete:hover{
+    background-color: #cf170a;
+    transform: scale(1.1);
+}

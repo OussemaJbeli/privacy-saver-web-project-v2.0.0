@@ -1,0 +1,145 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+.login{/*********************hedha*/
+    position: absolute;
+    top:0;
+    left:0%;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width:100%;
+    z-index: 999;
+    background-color: #000000b1;
+    visibility: hidden;
+    transition: 0.4s ease;
+}
+@keyframes open_login{
+    0%{
+        height: 0;
+        width: 0%;
+        top: 91vh;
+        left: 35%;
+    }
+    100%{
+        height: 80%;
+        width:30%;
+        top:5%;
+        left:0;
+    }
+}
+@keyframes close_login{
+    0%{
+        height: 80%;
+        width:30%;
+        top:5%;
+        left:0;
+    }
+    100%{
+        height: 0;
+        width: 0%;
+        top: 91vh;
+        left: 35%;
+    }
+}
+.login .formulaire_panel{
+    position: relative;
+    border-radius: 1vw;
+    border-color: #fff;
+    border-style: solid;
+    overflow: hidden;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.626), rgb(253, 157, 202));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+.login .form{
+    height: 100%;
+}
+.login form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-bottom: 10%;
+    width: 100%;
+    height: 90%;
+}
+/******************close******************/
+.login .close{
+    width: 100%;
+    height: 7%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+#close_img{
+    height: 100%;
+    background-color: #2a2828;
+    border-radius:  0 1vw 0 1vw;
+    cursor: pointer;
+}
+/*****************formuller*******************/
+/**************title***********/
+.login .title_add p{
+    text-align: center;
+    font-size: 2.5vw;
+    font-family: cursive;
+    font-weight: 900;
+    color: #2a2828;
+}
+/*************feilds*************/
+.feildes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cat_panel{
+    width: 80%;
+    display: flex;
+    justify-content:space-around;
+}
+.cat_panel label{
+    font-size: 1.2vw;
+    font-family: cursive;
+    font-weight: 900;
+    color: #2a2828;
+}
+.cat_panel #cat{
+    width: 50%;
+}
+.login input{
+    width: 20vw;
+    height: 5vh;
+    margin-top: 5vh;
+    border-style: solid;
+    background-color: transparent;
+    border-color: transparent transparent #2a2828;
+    color: #2a2828;
+    font-size: 1vw;
+    font-family: cursive;
+    font-weight: 900;
+    outline: none;
+}
+.login #show{
+    position: absolute;
+    top: 57%;
+    left: 78%;
+    width: 30px;
+    height: 30px;
+}
+/**********************botton***************/
+.login #login{
+    background-color: #2a2828;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1.2vw;
+    font-family: cursive;
+    font-weight: 900;
+    height: 7vh;
+    margin: 0;
+}

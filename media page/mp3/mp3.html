@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-mp3.css">
+    <title>Audios</title>
+</head>
+<body>
+    <p class="title">Audios</p>
+    <form>
+        <label for="shoser" class="add_audio"></label>
+        <input type="file" id="shoser" class="file_shoser" accept="audio/*">
+    </form>
+    <div class="panel" id="panel">
+        <div class="audio_player" id="audio_player">
+            <span class="image_play"><img src="../icon/music_player.png" alt=""></span>
+            <span class="audio_pl">
+                <audio controls id="audio_pl">
+                    <source src="" type="audio/mpeg">
+                </audio>
+            </span>
+        </div>
+        <div class="head_stord" id="head_stord">
+            <div class="stor_by">
+                <div class="images">
+                    <span><img src="../icon/box_menu.png"></span>
+                    <span class="list_icon"><img src="../icon/list_minu.png"></span>
+                </div>
+                <span class="stord">
+                    <span>Sort By:</span>
+                    <span>
+                        <select name="" id="">
+                            <option value="" selected>undefined</option>
+                            <option value="">Name</option>
+                            <option value="">Size</option>                    
+                            <option value="">Date</option>
+                        </select>
+                    </span>
+                </span>
+            </div>
+        </div>
+        <div class="card_audio" id="card_audio">
+            <table id="tab">
+                <tr>
+                    <td>
+                        <div class="card" id="[YT2mp3.info] - Aaron Smith - Dancin (KRONO Remix) - Lyrics (320kbps).mp3">
+                            <span class="img"></span>
+                            <div class="prop_contain">
+                                <p class="title_card">[YT2mp3.info] - Aaron Smith - Dancin (KRONO Remix) - Lyrics (320kbps).mp3</p>
+                                <div class="prop">
+                                    <span >2/12/2023</span>
+                                    <span >5.89MB</span>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="card" id="[YT2mp3.info] - Bloodshot - Fire Force  [AMV] (320kbps).mp3">
+                            <span class="img"></span>
+                            <div class="prop_contain">
+                                <p class="title_card">[YT2mp3.info] - Bloodshot - Fire Force  [AMV] (320kbps).mp3</p>
+                                <div class="prop">
+                                    <span >5/9/2022</span>
+                                    <span >10.2MB</span>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="card" id="[YT2mp3.info] - Sam Smith - Unholy (Lyrics) ft. Kim Petras (320kbps).mp3">
+                            <span class="img"></span>
+                            <div class="prop_contain">
+                                <p class="title_card">[YT2mp3.info] - Sam Smith - Unholy (Lyrics) ft. Kim Petras (320kbps).mp3</p>
+                                <div class="prop">
+                                    <span >8/9/2022</span>
+                                    <span >6.23MB</span>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <div class="bg_music">
+                <img src="icon/bg_music.png" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script_audio.js"></script>
+</html>

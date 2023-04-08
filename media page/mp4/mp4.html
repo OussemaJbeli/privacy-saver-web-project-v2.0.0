@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-mp4.css">
+    <title>Videos</title>
+</head>
+<body>
+    <p class="title">Videos</p>
+    <form>
+        <label for="shoser" class="add_videos"></label>
+        <input type="file" id="shoser" class="file_shoser" accept="video/*">
+    </form>
+    <div class="video_player" id="video_player">
+        <video controls class="video" id="player" src="videos/bleach amv.mp4">
+        </video>
+    </div>
+    <div id="panel">
+        <div class="stor_by" id="stor_by">
+            <span><img src="../icon/box_menu.png"></span>
+            <span class="list_icon"><img src="../icon/list_minu.png"></span>
+            <span class="stord">
+                <span>Sort By:</span>
+                <span>
+                    <select name="" id="">
+                        <option value="" selected>undefined</option>
+                        <option value="">Name</option>
+                        <option value="">Size</option>                    
+                        <option value="">Date</option>
+                    </select>
+                </span>
+            </span>
+        </div>
+        <div class="card_videos" id="card_videos">
+            <table id="tab">
+                <tr>
+                    <td>
+                        <div class="card" id="naruto amv(rise).mp4">
+                            <video>
+                                <source class="img_vid" src="videos/naruto amv(rise).mp4" type="video/mp4">
+                            </video>
+                            <div class="prop_contain">
+                                <p class="title_card" id="title_card">Naruto & Luffy & Asta [AMV] BELIVER</p>
+                                <div class="prop" id="prop">
+                                    <span >26/12/2002</span>
+                                    <span >570KB</span>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="card" id="bleach amv.mp4">
+                            <video>
+                                <source class="img_vid" src="videos/bleach amv.mp4" type="video/mp4">
+                            </video>
+                            <div class="prop_contain">
+                                <p class="title_card" id="title_card">Naruto & Luffy & Asta [AMV] BELIVER</p>
+                                <div class="prop" id="prop">
+                                    <span >26/12/2002</span>
+                                    <span >570KB</span>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="script_video.js"></script>
+</body>
+</html>

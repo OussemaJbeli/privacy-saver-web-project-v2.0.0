@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_notes.css">
+    <link rel="stylesheet" href="add_notes.css">
+    <link rel="stylesheet" href="edite_notes.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="pass_contant">
+        <header>
+            <p class="title">Password Saver</p>
+            <nav>
+                <select name="" id="">
+                    <option value="">All Items</option>
+                    <option value="">All Categories</option>
+                </select>
+                <div class="stor_by">
+                    <span><img src="icon/box_menu.png"></span>
+                    <span><img src="icon/list_minu.png"></span>
+                    <div class="stord">
+                        <span class="sort_word">Sort By: undefined</span>
+                        <span><img src=""></span>
+                        <div class="select_list">
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <img src="icon/add.png" class="plus" id="card_note">
+            <hr>
+        </header>
+        <!-- ***********************CARDS**************** -->
+        <div class="all_cardes" id="cardes">
+            <div class="card" id="1">
+                <div class="containt_note">
+                    <p>hello this is the first note</p>
+                </div>
+                <div class="disc_card">
+                    <span>date</span>
+                    <span id="date_note">2/3/2023 sep 26</span>
+                </div>
+            </div>
+            <div class="card" id="2">
+                <div class="containt_note">
+                    <p>hello this is the first note</p>
+                </div>
+                <div class="disc_card">
+                    <span>date</span>
+                    <span id="date_note">2/3/2023 sep 26</span>
+                </div>
+            </div>
+        </div>
+        <!-- ******************ADD******************* -->
+        <div class="note_body_add" id="note_body_add">
+            <div class="formulaire_panel" id="formulaire_panel">  
+                <div class="close">
+                    <img src="../home/close.png" alt="" id="close_img">
+                </div>
+                <div class="form">
+                    <form action="notes.html">
+                        <div class="title_add">
+                            <p>Add Note</p>
+                        </div>
+                        <div class="feildes">
+                            <textarea name="" placeholder="write your note..." id="note_containt_text" cols="70" rows="35"></textarea>
+                        </div>
+                        <div class="buttons">
+                            <input type="button" value="ADD" id="add">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- ******************ditails******************* -->
+        <div class="ditails" id="ditails_panel">
+            <div class="formulaire_panel" id="ditails_formulaire_panel">  
+                <div class="close">
+                    <img src="../home/close.png" alt="" id="ditails_close_img">
+                </div>
+                <div class="form">
+                    <form action="notes.html">
+                        <div class="title_ditails">
+                            <p>Details Note</p>
+                        </div>
+                        <div class="feildes_ditails">
+                            <textarea name="" placeholder="write your note..." id="note_edite_text" cols="70" rows="35"></textarea>
+                        </div>
+                        <div class="buttons">
+                            <input type="button" value="save" id="save">
+                            <input type="button" value="delete" id="delete">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

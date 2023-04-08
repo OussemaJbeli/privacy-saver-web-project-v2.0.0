@@ -1,0 +1,12 @@
+/*******************main_categoris********************/
+.main_categoris{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #1f1f4d;
+    z-index: 100;
+    padding-top: 10%;
+    overflow: hidden;
+
+}
